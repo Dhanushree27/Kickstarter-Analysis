@@ -27,6 +27,7 @@ The data for the below 5 plays were collated based on the client's request and c
 
 ## Campaigns for Musicals in GB
 A high level analysis was carried out on campaigns for musicals in GB. From the data, it can be seen that the median pledged amount was 368 GBP with the range being 0-1496 GBP, which is considerably less than the 4000 GBP. Most of the goal amount, on the other hand, was in the higher range. Therefore, the ideal goal amount is **less than 1500 GBP**.
+
 ![Goal Vs Pledged for Musicals in GB](https://user-images.githubusercontent.com/90650562/136070097-48fcddeb-62a8-4487-8186-ec5c8cd4eab9.png)
 
 ## Conclusion
