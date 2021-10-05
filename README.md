@@ -6,12 +6,15 @@ The purpose of this analysis is to identify trends and undertstand the performan
 
 ## Campaigns for Plays in the US
 After analysing the general trend of campaigns, we observed that 'Theatre' campaigns have performed better than other categories with **525** successful campaigns, but it should also be noted that there were **349** failed campaigns as well.
+
 ![Parent Category Outcome](https://user-images.githubusercontent.com/90650562/136069888-61078149-3280-48fe-b4d9-c0a4b6e232d3.png)
 
 Diving further into the theatre category, we observed that plays are a popular form of campaign with atleast a **50%** success rate.
+
 ![SubCategory Outcome](https://user-images.githubusercontent.com/90650562/136069987-e2dca424-6722-4dcf-91f5-69a0a27f2f2c.png)
 
 To identify the optimal time to start the campaign we looked at the success vs failure rates for campaigns started at different times and observed that theatre campaigns initiated during the summer months (May-July) have a higher success rate with **May** being the ideal.
+
 ![Outcomes based on launch date](https://user-images.githubusercontent.com/90650562/136070051-b1d0e62d-f2d4-457a-b9d6-6b613a388cc5.png)
 
 To understand the average goal amount for the campaign, we compared the statistical data for successful and failed campaigns. From the data, we can see that most of the campaigns with the goal amount of **1500-5000** dollars have been successful, with the median value being **3000 dollars**. The pledged amount likewise varied between 1717-5699 dollars with a median value of 3168 dollars. The data also suggests that campaigns that had a very high goal amount are likely to fail. The data was also skewed to the left suggesting that there were **a few** successful high goal campaigns, but there might be other factors influencing the success as most of the high goal campaigns have failed.
