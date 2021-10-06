@@ -1,37 +1,36 @@
 # An Analysis of Kickstarter Campaigns
-The purpose of this analysis is to identify trends and undertstand the performance of previous campaigns based on the Outcomes, Goal Vs Pledged amount, the time of initiation, the duration of campaign and the number of backers. This analysis was carried out for an aspiring playwright, Louise, to help with understanding the below factors:
-* Performance of campaigns for plays in the US
-* Performance of select plays, as requested by Louise
-* Perfomance of campaigns for musicals in GB
 
-## Campaigns for Plays in the US
-After analysing the general trend of campaigns, we observed that 'Theatre' campaigns have performed better than other categories with **525** successful campaigns, but it should also be noted that there were **349** failed campaigns as well.
+## Overview
+ This project was undertaken to assist an aspiring playwright, Louise, with starting a kickstarter campaign for her play. Utilizing the initial analysis data, Louise's campaign for her play * *Fever* * came close to meeting its fundraising goal within a short period of time. Upon success, Louise requested for more data which will be discussed in detail in this report. 
 
-![Parent Category Outcome](https://user-images.githubusercontent.com/90650562/136069888-61078149-3280-48fe-b4d9-c0a4b6e232d3.png)
+### Purpose
+The purpose of the analysis was to identify trends and understand the performance of previous campaigns based on the Outcomes, Goal amount and the Launch date. The below, new factors were analysed in detail after the initial success:
+* Outcomes based on Launch date
+* Outcomes based on Goal amount
 
-Diving further into the theatre category, we observed that plays are a popular form of campaign with atleast a **50%** success rate.
+## Analysis and Challenges
 
-![SubCategory Outcome](https://user-images.githubusercontent.com/90650562/136069987-e2dca424-6722-4dcf-91f5-69a0a27f2f2c.png)
+The dataset used contained data from 4114 campaigns spread across multiple categories and multiple countries. The category theatre had 1369 datapoints, out of which 1066 were for the subcategory plays. This category was used as the base for analysis. The initial analysis based on campaigns for plays in the US had revealed that the ideal would be to start the campaign around May, with a goal amount between 1500 to 5000 dollars. Based on request, this was further studied in detail to better understand the effect of launch date and goal amount on the success rate.
 
-To identify the optimal time to start the campaign we looked at the success vs failure rates for campaigns started at different times and observed that theatre campaigns initiated during the summer months (May-July) have a higher success rate with **May** being the ideal.
+### Analysis of Outcomes Based on Launch Date
+To understand the effect of launch date on outcome, a pivot table was created using the month of launch (isolated from the Launch Date) as the row label and outcomes as the column label. The 'live' campaigns were filtered out since they were not completed. This data was filtered specifically for 'Theatre' campaigns. An additional filter containing the year of launch was made available for further analysis, if required. A pivot chart with line chart type was created and the observerd data showed that the success rate was high during the summer months (May-July). The month of **May** had the highest number (111) of successful campaigns. Though there was a peak in the successful campaigns, there was no corresponding dip in the failed campaigns; however it was also observed that the month of initiation does not have a considerable effect on the failed or canceled campaigns suggesting that there were other contributing factors.
 
-![Outcomes based on launch date](https://user-images.githubusercontent.com/90650562/136070051-b1d0e62d-f2d4-457a-b9d6-6b613a388cc5.png)
+![Theatre_Outcomes_Vs_Launch]https://github.com/Dhanushree27/Kickstarter-Analysis/blob/2a0b980b2c340421923f0cc12bcf71142f98cc87/Resources/Theatre_Outcomes_Vs_Launch.png)
 
-To understand the average goal amount for the campaign, we compared the statistical data for successful and failed campaigns. From the data, we can see that most of the campaigns with the goal amount of **1500-5000** dollars have been successful, with the median value being **3000 dollars**. The pledged amount likewise varied between 1717-5699 dollars with a median value of 3168 dollars. The data also suggests that campaigns that had a very high goal amount are likely to fail. The data was also skewed to the left suggesting that there were **a few** successful high goal campaigns, but there might be other factors influencing the success as most of the high goal campaigns have failed.
+### Analysis of Outcomes Based on Goals
+The ideal goal amount was identified during initial analysis, using statistical concepts mean and median. Since the mean value was skewed, the median data was considered as the better approximation and a range of 1500 to 5000 dollars was suggested. The data also suggested that campaigns that had a very high goal amount are likely to fail. The skewness in mean of successful campaigns suggested that there were a few successful high goal campaigns, but there might have been other factors influencing the success as most of the high goal campaigns had failed. 
+For further analysis, the goal amount was classified into bins with a difference of 5000 and the values were compared to better understand the effect of goal amount. It was observed that campaigns with goals less than 1000 had the highest success rate, followed by campaigns with goals between 1000 and 5000. For the mid range between 5000 to 25000, there were a equal number of failed and successful campaigns suggesting that there were other factors influencing the success or failure of those campaigns. Compared to successful campaigns, there were a higher number of failed campaigns for goals greater than 25000, except for the range 35000 to 45000 which displayed a higher sucess rate. Despite the success, it was not considered a representative sample of the population as the number of campaigns were comparitively low (~6).
 
-## Edinburgh Report
-The data for the below 5 plays were collated based on the client's request and can be viewed in detail on the 'Edinburgh Report' sheet in the file.
+![Outcomes_Vs_Goals](https://github.com/Dhanushree27/Kickstarter-Analysis/blob/2a0b980b2c340421923f0cc12bcf71142f98cc87/Resources/Outcomes_Vs_Goals.png)
 
-- Be Prepared
-- Checkpoint 22
-- Cutting Off Kate Bush
-- Jestia and Raedon
-- The Hitchhiker's Guide to the Family
+### Challenges and Difficulties Encountered
+Since the analysis was for plays in the US with a lower goal amount, there was considerable sample data to perform the analysis and arrive at a result. If the request had been for a higher goal amount, with the current sample set, it would have been difficult to arrive at a conclusive result since there were other variables influencing the success rate. 
+Also, if the analysis had been for a different subcategory with relatively low data points, the result might have not been comprehensive.
 
-## Campaigns for Musicals in GB
-A high level analysis was carried out on campaigns for musicals in GB. From the data, it can be seen that the median pledged amount was 368 GBP with the range being 0-1496 GBP, which is considerably less than the 4000 GBP. Most of the goal amount, on the other hand, was in the higher range. Therefore, the ideal goal amount is **less than 1500 GBP**.
+## Results
+From the analysis, it was observed that campaigns started during summer months had a higher success rate and there was a decrease in success rate for campaigns started in winter months. The month of launch did not have a considerable effect on failed or canceled campaigns suggesting that there were other factors influencing the failure rate.
+With respect to the goal amount, the detailed analysis corroborated the initial analysis. Campaigns with goals lower than 5000 had a higher success rate and campaigns with high goals, greaater than 25000, had a higher failure rate with a few outliers. 
+The dataset is limited in that it is limited to basic parameters of the campaign and does not provide more information on the kind of promotion, audience group it was intended for or other factors that could influence the success or failure of the campaign. It is limited in its ability to understand causes for anamolies. Also, it does not have sufficient data points for all categories.
+Also, a time-based chart using the years could have been plotted to understand the general trend and current popularity of the category. More time-based charts using the years would have also helped us understand whether the goal Vs pledged amount or the number of backers had changed over the years. 
 
-![Goal Vs Pledged for Musicals in GB](https://user-images.githubusercontent.com/90650562/136070097-48fcddeb-62a8-4487-8186-ec5c8cd4eab9.png)
 
-## Conclusion
-In summary, to start a campaign for plays in the US, it would be ideal to start the campaign around May, with a goal amount between 1500 to 5000 dollars
