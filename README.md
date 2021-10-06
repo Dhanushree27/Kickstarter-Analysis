@@ -35,6 +35,6 @@ With respect to the goal amount, the detailed analysis corroborated the initial 
 
 The dataset is limited in that it is limited to basic parameters of the campaign and does not provide more information on the kind of promotion, audience group it was intended for or other factors that could influence the success or failure of the campaign. It is limited in its ability to understand causes for anamolies. Also, it does not have sufficient data points for all categories.
 
-Also, a time-based chart using the years could have been plotted to understand the general trend and current popularity of the category. More time-based charts using the years would have also helped us understand whether the goal Vs pledged amount or the number of backers had changed over the years. 
+Also, a time-based chart using years could have been plotted to understand the general trend and current popularity of the category. More year-based charts would have also helped us understand whether the goal Vs pledged amount or the number of backers had changed over the years. 
 
 
